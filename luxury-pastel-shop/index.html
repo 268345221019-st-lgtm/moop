@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="gradient-bg min-h-screen">
+
+
+<nav class="glass sticky top-0 z-50 shadow-lg">
+  <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+    <div class="flex items-center gap-3">
+      <div class="w-12 h-12 rounded-full bg-pink-300 flex items-center justify-center text-white font-bold text-xl shadow-lg">P</div>
+      <h1 class="text-2xl font-bold text-pink-700">Teddy Belle</h1>
+    </div>
+
+    <ul class="hidden md:flex gap-8 text-pink-700 font-medium">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="product-detail.html">Detail</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="login.html">Login</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+<section class="container mx-auto px-6 py-16">
+  <div class="grid lg:grid-cols-2 gap-12 items-center">
+    
+    <div>
+      <span class="bg-white text-pink-500 px-5 py-2 rounded-full shadow-lg">Luxury Pastel Collection</span>
+      <h1 class="text-6xl font-bold text-pink-700 mt-6 leading-tight">
+        Cute & Elegant <br> Pastel Fashion
+      </h1>
+      <p class="text-gray-700 mt-6 text-lg leading-8">
+        Teddy Luxe คือร้านตุ๊กตาหมีพรีเมียมสไตล์ Luxury Pastel 
+  ที่รวบรวมความน่ารัก ความอบอุ่น และความหรูหราไว้ในที่เดียว 
+  เราคัดเลือกตุ๊กตาหมีคุณภาพสูง เนื้อผ้านุ่มพิเศษ ดีไซน์ละมุนโทนพาสเทล 
+  เหมาะสำหรับเป็นของขวัญในวันสำคัญ หรือใช้ตกแต่งห้องให้ดูอบอุ่นและน่ารักมากยิ่งขึ้น
+      </p>
+
+      <div class="flex gap-4 mt-8 flex-wrap">
+        <button id="openModal" class="bg-pink-500 hover:bg-pink-600 text-white px-8 py-4 rounded-full shadow-xl">
+          ดูโปรโมชั่น
+        </button>
+
+        <a href="products.html" class="bg-white text-pink-600 px-8 py-4 rounded-full shadow-xl">
+          ดูสินค้า
+        </a>
+      </div>
+    </div>
+
+    <div>
+      <img src="../img/1.jpg"class="rounded-[40px] shadow-2xl w-full h-[520px] object-cover">
+    </div>
+
+  </div>
+</section>
+
+<section class="container mx-auto px-6 py-16">
+  <div class="text-center mb-12">
+    <h2 class="text-5xl font-bold text-pink-700">Featured Products</h2>
+    <p class="text-gray-600 mt-4">Pastel UI Card Components</p>
+  </div>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+
+    <div class="glass rounded-[35px] overflow-hidden shadow-2xl card-hover">
+      <img src="../img/2.jpg" class="h-72 w-full object-cover">
+      <div class="p-8">
+        <h3 class="text-2xl font-bold text-pink-700">Pastel Bag</h3>
+        <p class="text-gray-600 mt-3">Luxury pastel style สำหรับวัยรุ่น</p>
+        <button class="mt-6 bg-pink-400 text-white px-6 py-3 rounded-full">Buy Now</button>
+      </div>
+    </div>
+
+    <div class="glass rounded-[35px] overflow-hidden shadow-2xl card-hover">
+      <img src="../img/3.jpg" class="h-72 w-full object-cover">
+      <div class="p-8">
+        <h3 class="text-2xl font-bold text-pink-700">Cute Teddy</h3>
+        <p class="text-gray-600 mt-3">Minimal pastel luxury collection</p>
+        <button class="mt-6 bg-purple-400 text-white px-6 py-3 rounded-full">Buy Now</button>
+      </div>
+    </div>
+
+    <div class="glass rounded-[35px] overflow-hidden shadow-2xl card-hover">
+      <img src="../img/4.jpg" class="h-72 w-full object-cover">
+      <div class="p-8">
+        <h3 class="text-2xl font-bold text-pink-700">Sweet Fashion</h3>
+        <p class="text-gray-600 mt-3">Responsive Tailwind CSS UI</p>
+        <button class="mt-6 bg-blue-400 text-white px-6 py-3 rounded-full">Buy Now</button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<div id="promoModal" class="hidden fixed inset-0 bg-black/50 flex items-center justify-center p-4">
+  <div class="bg-white rounded-[35px] p-10 max-w-md w-full text-center shadow-2xl">
+    <h2 class="text-4xl font-bold text-pink-600 mb-4">50% OFF</h2>
+    <p class="text-gray-600 mb-8">โปรโมชั่นพิเศษสำหรับลูกค้าใหม่</p>
+    <button id="closeModal" class="bg-pink-500 text-white px-8 py-3 rounded-full">
+      ปิด
+    </button>
+  </div>
+</div>
+
+<script src="assets/js/modal.js"></script>
+</body>
+</html>

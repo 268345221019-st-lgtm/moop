@@ -1,0 +1,18 @@
+
+body{
+  font-family:'Poppins',sans-serif;
+  scroll-behavior:smooth;
+}
+.glass{
+  background: rgba(255,255,255,0.65);
+  backdrop-filter: blur(10px);
+}
+.gradient-bg{
+  background: linear-gradient(135deg,#ffd6e7,#d6e9ff,#efe1ff);
+}
+.card-hover{
+  transition:0.3s ease;
+}
+.card-hover:hover{
+  transform:translateY(-10px);
+}
